@@ -93,6 +93,9 @@ function commitWork(fiber) {
         )
     } else if (fiber.effectTag === "DELETION") {
         domParent.removeChild(fiber.dom)
+        // Found a issue, and there is one more way to fix it: 
+        // https://github.com/pomber/didact/issues/30
+        return
     }
 
     commitWork(fiber.child)
