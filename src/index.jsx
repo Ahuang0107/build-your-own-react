@@ -10,18 +10,19 @@ const update = () => {
     subElement = (
         <div>after change</div>
     )
-    element = (
-        <div>
-            {subElement}
-        </div>
-    )
+    element = <App name="foo"/>
     ReactDOM.render(element, container)
 }
 const container = document.getElementById("root")
-let element = (
-    <div>
-        <button onClick={update}>Click</button>
-        {subElement}
-    </div>
-)
+
+function App(props) {
+    return (
+        <div>
+            <button onClick={update}>Click</button>
+            {subElement}
+        </div>
+    )
+}
+
+let element = <App name="foo"/>
 ReactDOM.render(element, container)
