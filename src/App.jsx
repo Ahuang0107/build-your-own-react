@@ -1,6 +1,6 @@
-import React from "./react.js";
-import ReactDOM from "./react-dom.js";
-import Counter from "./Counter.jsx";
+import React from "./react";
+import ReactDOM from "./react-dom";
+import Counter from "./Counter";
 
 /** @jsx React.createElement */
 export default function App(props) {

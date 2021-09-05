@@ -1,5 +1,5 @@
-import React from "./react.js";
-import {useState} from "./react-dom.js";
+import React from "./react";
+import {useState} from "./react-dom";
 
 /** @jsx React.createElement */
 export default function Counter() {

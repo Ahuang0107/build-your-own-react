@@ -1,6 +1,6 @@
-import React from "./react.js";
-import ReactDOM from "./react-dom.js";
-import App from "./App.jsx";
+import React from "./react";
+import ReactDOM from "./react-dom";
+import App from "./App";
 
 /** @jsx React.createElement */
 ReactDOM.render(
